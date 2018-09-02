@@ -1,0 +1,12 @@
+<section class="section">
+  <div class="container">
+    <h1 class="title">Route 1</h1>
+    <hr>
+    <tram [tram]="tramOne$ | async" [route]="routeOne$ | async" (update)="onUpdate($event)"></tram>
+    <tram [tram]="tramTwo$ | async" [route]="routeOne$ | async" (update)="onUpdate($event)"></tram>
+
+    <h1 class="title">Route 2</h1>
+    <hr>
+    <tram [tram]="tramThree$ | async" [route]="routeTwo$ | async" (update)="onUpdate($event)"></tram>
+  </div>
+</section>
